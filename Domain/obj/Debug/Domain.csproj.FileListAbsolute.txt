@@ -1,0 +1,10 @@
+E:\DEV\Projects\Cat\Domain\bin\Debug\Domain.dll
+E:\DEV\Projects\Cat\Domain\bin\Debug\Domain.pdb
+E:\DEV\Projects\Cat\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+E:\DEV\Projects\Cat\Domain\obj\Debug\Domain.dll
+E:\DEV\Projects\Cat\Domain\obj\Debug\Domain.pdb
+C:\Users\User\Desktop\DESKTOP\SolutionHomeWork1\Domain\bin\Debug\Domain.dll
+C:\Users\User\Desktop\DESKTOP\SolutionHomeWork1\Domain\bin\Debug\Domain.pdb
+C:\Users\User\Desktop\DESKTOP\SolutionHomeWork1\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\DESKTOP\SolutionHomeWork1\Domain\obj\Debug\Domain.dll
+C:\Users\User\Desktop\DESKTOP\SolutionHomeWork1\Domain\obj\Debug\Domain.pdb
