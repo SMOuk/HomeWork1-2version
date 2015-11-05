@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,14 +26,21 @@ namespace View
                 do
                 {
                     int select = 0;
-                    Console.WriteLine($"Привет, меня зовут {cat.Name} и мне {cat.Age} лет, мой цвет - {cat.CurrentColor}");
-                    Console.WriteLine("\n1.Задать имя\n2.Покормить\n3.Ударить\n4.Выйти");
+                    Console.WriteLine($"\nПривет, меня зовут {cat.Name} и мне {cat.Age} лет, мой цвет - {cat.CurrentColor}");
+                    Console.WriteLine("\n1.Задать имя\n2.Покормить\n3.Ударить\n4.Поменять цвета здоровой и больной кошки\n5.Выйти");
                     select = Convert.ToInt32(Console.ReadLine());
                     switch (select)
                     {
                         case 1:
-                            Console.WriteLine("Введите имя");
-                            cat.Name = Console.ReadLine();
+                            if (cat.Name == "NoName")
+                            {
+                                Console.WriteLine("Введите имя");
+                                cat.Name = Console.ReadLine();
+                            }
+                            else
+                            {
+                                Console.WriteLine("Имя можно задавать только 1 раз!");
+                            }
                             break;
                         case 2:
                             cat.Feed();
@@ -43,13 +50,22 @@ namespace View
                             cat.Punish();
                             Console.WriteLine($"Вы наказали кота {cat.Name}a");
                             break;
-                        case 4:
+                        case 4: 
+                            Console.WriteLine("Введите цвет здоровой кошки:");
+                            CatColor.HealthyColor = Console.ReadLine();
+                            Console.WriteLine("Введите цвет больной кошки:");
+                            CatColor.SickColor = Console.ReadLine();
+                            break;
+                        case 5:
                             x = false;
                             break;
                         default:
                             Console.WriteLine("Неверный пункт меню");
                             break;
                     }
+                    Console.WriteLine("Нажмите Enter для подтверждения!");
+                    Console.ReadKey();
+                    Console.Clear();
                 } while (x);
             }
         }
