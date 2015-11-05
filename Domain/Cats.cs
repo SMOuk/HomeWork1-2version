@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,17 +17,16 @@ namespace Domain
             _health = 5;
         }
 
-        public CatColor Color = new CatColor();
         public string CurrentColor
         {
             get {
                 if (_health < 5)
                 {
-                    return Color.SickColor;
+                    return CatColor.SickColor;
                 }
                 else
                 {
-                    return Color.HealthyColor;
+                    return CatColor.HealthyColor;
                 }
             }
         }
