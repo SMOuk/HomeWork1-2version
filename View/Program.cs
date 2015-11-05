@@ -27,7 +27,7 @@ namespace View
                 {
                     int select = 0;
                     Console.WriteLine($"\nПривет, меня зовут {cat.Name} и мне {cat.Age} лет, мой цвет - {cat.CurrentColor}");
-                    Console.WriteLine("\n1.Задать имя\n2.Покормить\n3.Ударить\n4.Поменять цвета здоровой и больной кошки\n5.Выйти");
+                    Console.WriteLine("\n1.Задать имя\n2.Покормить\n3.Ударить\n4.Поменять цвет здоровой и больной кошки\n5.Выйти");
                     select = Convert.ToInt32(Console.ReadLine());
                     switch (select)
                     {
