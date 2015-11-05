@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class CatColor
+    static public class CatColor
     {
-        public string SickColor = "Зелёный";
-
-        public string HealthyColor = "Белый";
+        static public string SickColor = "Зелёный";
+        static public string HealthyColor = "Белый";
     }
 }
